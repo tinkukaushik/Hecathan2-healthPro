@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      background-image: url(https://i.pinimg.com/736x/91/70/17/917017949818ccfe4475e5f7f65979b6.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h2 {
+      color: #007bff;
+    }
+    .confirmation-details {
+      margin-bottom: 20px;
+    }
+    .confirmation-details h3 {
+      margin-bottom: 10px;
+    }
+    .confirmation-details p {
+      margin: 5px 0;
+    }
+    .button-container {
+      text-align: center;
+    }
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Appointment Confirmation</h2>
+    </div>
+    <div class="confirmation-details">
+      <h3>Appointment Details</h3>
+      <p><strong>Name:</strong> Tinku MOni KAUSHIK</p>
+      <p><strong>Email:</strong> johndoe@example.com</p>
+      <p><strong>Gender:</strong> Male</p>
+      <p><strong>Age:</strong> 30</p>
+      <p><strong>Guardian's Name:</strong> </p>
+      <p><strong>Date:</strong> June 15, 2024</p>
+      <p><strong>Time:</strong> 10:00 AM</p>
+    </div>
+    <div class="button-container">
+      <button class="button" onclick="printConfirmation()">Print Confirmation</button>
+      <a href="userprofile.html" class="button">Your Profile</a>
+    </div>
+  </div>
+
+  <script>
+    function printConfirmation() {
+      // Open print dialog for the confirmation details
+      window.print();
+    }
+  </script>
+</body>
+</html>

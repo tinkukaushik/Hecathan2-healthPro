@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor's Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yNV9zaW1wbGVfM2RfaWxsdXN0cmF0aW9uX29mX2FfcmVjb3Zlcnlfcm9vbV93aV80ZjhkNDIwNC02N2I4LTQwMDQtYTBlNy05YjljMjIyMzE2ZGVfMS5qcGc.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+          }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffffb6;
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgb(64, 0, 255);
+    }
+    .profile-header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .profile-name {
+      font-size: 24px;
+      color: #007bff;
+    }
+    .profile-details {
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .profile-details p {
+      margin: 10px 0;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 20px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-header">
+      <img src="https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg" alt="Doctor's Profile Picture">
+      <div class="profile-name">Dr. Pankaj Kalita</div>
+      <div class="profile-rating">⭐⭐⭐⭐⭐</div>
+    </div>
+    <div class="profile-details">
+      <p><strong>Qualification:</strong> MBBS, MD</p>
+      <p><strong>Available Time:</strong> Monday to Friday, 9:00 AM - 5:00 PM</p>
+      <p><strong>Description:</strong> Dr. John Doe, a highly skilled and compassionate medical professional with extensive experience in internal medicine. Holding qualifications of MBBS and MD, Dr. Doe is dedicated to providing comprehensive and personalized healthcare solutions to patients. With a commitment to excellence, Dr. Doe offers a holistic approach to patient care, focusing on preventive measures and patient education. Available Monday to Friday from 9:00 AM to 5:00 PM, Dr. Doe ensures accessibility and convenience for patients seeking medical assistance. Trustworthy, knowledgeable, and empathetic, Dr. Doe strives to make a positive impact on the health and well-being of every individual under their care..</p>
+    </div>
+    <div class="button-container">
+      <button class="button" onclick="bookAppointment()">Book Appointment</button>
+      <button class="button" onclick="bookConsultancy()">Book Consultancy</button>
+      <button class="button" onclick="leaveReview()">Leave a Review</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <script>
+    // function bookAppointment() {
+    //   // Redirect to book appointment page
+    //   window.location.href = "book_appointment.html";
+    // }
+
+    function bookConsultancy() {
+      // Redirect to book consultancy page
+      window.location.href = "book_consultancy.html";
+    }
+
+    function leaveReview() {
+      // Open a modal or redirect to leave review page
+      alert("Leave a review functionality coming soon!");
+    }
+  </script>
+
+</body>
+</html>
